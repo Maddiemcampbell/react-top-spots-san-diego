@@ -21,7 +21,7 @@ componentWillMount() {
     return (
       <body>
         <div className='app'>
-          <div className='contentWrapper'>
+          <div id='headWrapper'>
             <h1>
               San Diego Top Spots
             </h1>
@@ -29,7 +29,7 @@ componentWillMount() {
               A list of the top 30 places to see in San Diego, California.
             </h3>
           </div>
-          <div className='contentWrapper'>
+          <div id='container'>
             {
             this.state.topspots.map(topspot => (
               <TopSpot
